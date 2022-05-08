@@ -275,9 +275,10 @@ If you see that the rclone service is running fine, your files should be mounted
 ------------
 - Head over to `Settings>External Storage` in your nextcloud panel
 
-- Add your storage like shown in the picture below (keine=none).
+- Add your storage like shown in the picture below
 
-![](https://raw.githubusercontent.com/KitsuneYokai/rclone-Nextcloud/main/setup_storage_NC.png?token=GHSAT0AAAAAABUIE62TAVIQJEUHM42UUWRSYTYBSGA)
+![plot](./Images/setup_storage_NC.png)
+
 
 ------------
 that should be it. 
