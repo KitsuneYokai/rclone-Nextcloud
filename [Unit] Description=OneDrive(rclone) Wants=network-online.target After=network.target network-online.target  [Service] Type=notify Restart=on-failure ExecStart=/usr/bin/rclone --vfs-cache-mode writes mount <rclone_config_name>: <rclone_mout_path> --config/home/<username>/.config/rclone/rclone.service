@@ -1,0 +1,13 @@
+[Unit]
+Description=OneDrive(rclone)
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=notify
+Restart=on-failure
+ExecStart=/usr/bin/rclone --vfs-cache-mode writes mount <rclone_config_name>: <rclone_mout_path> --config /home/<username>/.config/rclone/rclone.conf>
+ExecStop=fusermount -u <rclone_mout_path>
+
+[Install]
+WantedBy=default.target
